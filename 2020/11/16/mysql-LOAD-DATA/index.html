@@ -22,19 +22,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="probelover的博客">
-<meta property="og:url" content="http://example.com/archives/2020/10/index.html">
+  <meta name="description" content="mysql LOAD DATAMySQL 中提供了LOAD DATA INFILE语句来插入数据。将该文件中的数据插入到当前数据库的表中。 语法如下：  LOAD DATA LOCAL INFILE ‘file_name’ INTO TABLE table_name   FIELDS TERMINATED BY ‘:’   LINES TERMINATED BY ‘\r\n’;   服务端需要开启">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql LOAD DATA">
+<meta property="og:url" content="http://example.com/2020/11/16/mysql-LOAD-DATA/index.html">
 <meta property="og:site_name" content="probelover的博客">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="mysql LOAD DATAMySQL 中提供了LOAD DATA INFILE语句来插入数据。将该文件中的数据插入到当前数据库的表中。 语法如下：  LOAD DATA LOCAL INFILE ‘file_name’ INTO TABLE table_name   FIELDS TERMINATED BY ‘:’   LINES TERMINATED BY ‘\r\n’;   服务端需要开启">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-16T10:43:27.000Z">
+<meta property="article:modified_time" content="2020-11-16T10:44:35.510Z">
 <meta property="article:author" content="probelover">
-<meta property="article:tag" content="博客,probelover">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2020/10/">
+<link rel="canonical" href="http://example.com/2020/11/16/mysql-LOAD-DATA/">
 
 
 <script class="page-configurations">
@@ -42,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | probelover的博客</title>
+  <title>mysql LOAD DATA | probelover的博客</title>
   
 
 
@@ -136,7 +138,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -148,6 +150,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mysql-LOAD-DATA"><span class="nav-number">1.</span> <span class="nav-text">mysql LOAD DATA</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -192,52 +195,96 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
       
 
       
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/16/mysql-LOAD-DATA/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="probelover">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="probelover的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          mysql LOAD DATA
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+
+      <time title="创建时间：2020-11-16 18:43:27 / 修改时间：18:44:35" itemprop="dateCreated datePublished" datetime="2020-11-16T18:43:27+08:00">2020-11-16</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="mysql-LOAD-DATA"><a href="#mysql-LOAD-DATA" class="headerlink" title="mysql LOAD DATA"></a>mysql LOAD DATA</h2><p>MySQL 中提供了LOAD DATA INFILE语句来插入数据。将该文件中的数据插入到当前数据库的表中。</p>
+<p>语法如下：</p>
+<blockquote>
+<p>LOAD DATA LOCAL INFILE ‘file_name’ INTO TABLE table_name<br>   FIELDS TERMINATED BY ‘:’<br>   LINES TERMINATED BY ‘\r\n’; </p>
+</blockquote>
+<p>服务端需要开启相关权限：</p>
+<blockquote>
+<p>查看权限是否开启：<br>show variables like ‘local_infile’;<br>设置状态开启：<br>set global local_infile = 1;</p>
+</blockquote>
+<p>同时在使用命令进行此操作时，需要加上相关参数</p>
+<blockquote>
+<p>–local-infile=1<br>如：mysql –local-infile=1 -uuser -ppwd</p>
+</blockquote>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-10-12T10:51:31+08:00"
-              content="2020-10-12">
-          10-12
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/12/Oracle%E7%AE%80%E4%BB%8B/" itemprop="url">
-            <span itemprop="name">Oracle简介</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mysql/" rel="tag"># mysql</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/10/12/Oracle%E7%AE%80%E4%BB%8B/" rel="prev" title="Oracle简介">
+                  <i class="fa fa-chevron-left"></i> Oracle简介
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-
-    </div>
-  </div>
   
   
-  
-
   
 
 

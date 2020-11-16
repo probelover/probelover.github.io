@@ -160,12 +160,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -196,6 +196,82 @@
       
 
       
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/16/mysql-LOAD-DATA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="probelover">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="probelover的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/16/mysql-LOAD-DATA/" class="post-title-link" itemprop="url">mysql LOAD DATA</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-11-16 18:43:27 / 修改时间：18:44:35" itemprop="dateCreated datePublished" datetime="2020-11-16T18:43:27+08:00">2020-11-16</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="mysql-LOAD-DATA"><a href="#mysql-LOAD-DATA" class="headerlink" title="mysql LOAD DATA"></a>mysql LOAD DATA</h2><p>MySQL 中提供了LOAD DATA INFILE语句来插入数据。将该文件中的数据插入到当前数据库的表中。</p>
+<p>语法如下：</p>
+<blockquote>
+<p>LOAD DATA LOCAL INFILE ‘file_name’ INTO TABLE table_name<br>   FIELDS TERMINATED BY ‘:’<br>   LINES TERMINATED BY ‘\r\n’; </p>
+</blockquote>
+<p>服务端需要开启相关权限：</p>
+<blockquote>
+<p>查看权限是否开启：<br>show variables like ‘local_infile’;<br>设置状态开启：<br>set global local_infile = 1;</p>
+</blockquote>
+<p>同时在使用命令进行此操作时，需要加上相关参数</p>
+<blockquote>
+<p>–local-infile=1<br>如：mysql –local-infile=1 -uuser -ppwd</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
       
   
   
